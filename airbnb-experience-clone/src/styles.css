@@ -1,0 +1,110 @@
+body {
+    font-family: "Inter";
+    margin: 0;
+}
+.esquerda, .imagens, .conteudo {
+    margin: auto;
+    width: 70%;
+}
+/* HEADER */
+.header {
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+}
+.logo {
+    width: 100px;
+}
+/* IMAGENS TOPO */
+.imagens-estaticas {
+    display: flex;
+    justify-content: space-evenly;
+    height: 550px;
+    margin: 40px 0;
+}
+.imagens-topo {
+    margin-bottom: 12px;
+}
+.imagens-estaticas img, .img-cl-1, .img-cl-2, .img-cl-3, .img-cl-4, .img-cl-5 {
+    width: 170px;
+}
+.img-cl-1, .img-cl-2, .img-cl-3, .img-cl-4, .img-cl-5 {
+    display: flex;
+    flex-direction: column;
+}
+.img-cl-1 {
+    justify-content: center;
+    margin-bottom: 45px;
+}
+.img-cl-2 {
+    justify-content: flex-start;
+    margin-top: 45px;
+}
+.img-cl-3 {
+    justify-content: flex-end;
+}
+.img-cl-4 {
+    justify-content: flex-start;
+}
+.img-cl-5 {
+    justify-content: center;
+}
+/* CONTEUDO */
+.conteudo {
+    padding: 0 45px;
+}
+h1 {
+    font-size: 36px;
+}
+p {
+    color: #222222;
+    font-size: 18px;
+}
+/* RESPONSIVO */
+@media (max-width: 1140px) {
+    .imagens-estaticas {
+        height: 500px;
+    }
+    .imagens-estaticas img, .img-cl-1, .img-cl-2, .img-cl-3, .img-cl-4, .img-cl-5 {
+        max-width: 100%;
+        max-height: 100%;
+        padding: 0 4px;
+    }
+}
+@media (max-width: 1024px) {
+    .imagens-estaticas {
+        height: 450px;
+    }
+}
+@media (max-width: 960px) {
+    .header {
+        padding: 20px 20px 20px 45px;
+    }
+    .esquerda, .conteudo {
+        margin: 0;
+        width: auto;
+    }
+    .imagens {
+        margin: auto;
+        width: 75%;
+    }
+    .imagens-estaticas {
+        height: 450px;
+    }
+    .imagens-estaticas img, .img-cl-1, .img-cl-2, .img-cl-3, .img-cl-4, .img-cl-5 {
+        width: auto;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    p {
+        font-size: 22px;
+        width: 65%;
+    }
+}
+@media (max-width: 768px) {
+    .imagens-estaticas {
+        height: 350px;
+    }
+}
