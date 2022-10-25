@@ -2,7 +2,7 @@ body {
     font-family: "Inter";
     margin: 0;
 }
-.esquerda, .imagens, .conteudo {
+.esquerda, .imagens, .conteudo, .card--t {
     margin: auto;
     width: 70%;
 }
@@ -61,6 +61,51 @@ p {
     color: #222222;
     font-size: 18px;
 }
+/* CARD */
+.card {
+    padding: 60px 0 40px 0;
+    width: 210px;
+}
+.card p, .card li {
+    font-size: 14px;
+}
+.foto {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+.foto p {
+    background: #fff;
+    border-radius: 4px;
+    padding: 4px 6px;
+    position: absolute;
+    top: 0px;
+    left: 16px;
+}
+.foto img {
+    width: 210px;
+}
+.nota, .nome p, .preco p {
+    margin: 6px 0 6px 0;
+}
+.nota {
+    color: #918E9B !important;
+    display: flex;
+    align-items: center;
+}
+.estrela, .nota span {
+    margin-right: 5px;
+}
+.estrela {
+    height: 14px;
+}
+.review--star {
+    color: #222222 !important;
+}
+.nome p {
+    margin: 0;
+}
+
 /* RESPONSIVO */
 @media (max-width: 1140px) {
     .imagens-estaticas {

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom"
 import "./styles.css"
 import Header from './Header'
 import Conteudo from './Conteudo'
+import Card from './Card'
 import Imagens from './Imagens'
 
 
@@ -12,6 +13,7 @@ function Index() {
             <Header />
             <Imagens />
             <Conteudo />
+            <Card />
         </div>
     )
 }
