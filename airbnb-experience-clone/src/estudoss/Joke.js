@@ -8,6 +8,7 @@ export default function Joke(props) {
             {props.isPun && <h2>é piada</h2>}
             {setup && <h2>{setup}</h2>}
             <p>{punchline}</p>
+            <hr />
         </div>
     )
 }

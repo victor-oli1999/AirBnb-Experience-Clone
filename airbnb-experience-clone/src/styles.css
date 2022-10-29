@@ -2,7 +2,7 @@ body {
     font-family: "Inter";
     margin: 0;
 }
-.esquerda, .imagens, .conteudo, .card--t {
+.esquerda, .imagens, .conteudo, .cards-list {
     margin: auto;
     width: 70%;
 }
@@ -62,8 +62,13 @@ p {
     font-size: 18px;
 }
 /* CARD */
+.cards-list {
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 20px;
+}
 .card {
-    padding: 60px 0 40px 0;
+    padding: 60px 20px 40px 0;
     width: 210px;
 }
 .card p, .card li {
@@ -126,7 +131,7 @@ p {
     .header {
         padding: 20px 20px 20px 45px;
     }
-    .esquerda, .conteudo {
+    .esquerda, .conteudo, .cards-list {
         margin: 0;
         width: auto;
     }

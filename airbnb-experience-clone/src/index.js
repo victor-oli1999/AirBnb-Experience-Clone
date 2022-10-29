@@ -5,22 +5,29 @@ import Header from './Header'
 import Conteudo from './Conteudo'
 import Card from './Card'
 import Imagens from './Imagens'
+import data from "./data"
 
 function Index() {
+    const dataEntry = data.map(props => {
+        return <Card 
+            id={props.id}
+            img={props.img}
+            rating={props.stats.rating}
+            review={props.stats.review}
+            country={props.country}
+            title={props.title}
+            price={props.price}
+            vagas={props.vagas}
+        /> 
+    })
     return (
         <div>
             <Header />
             <Imagens />
             <Conteudo />
-            <Card 
-                img="katie-zaferes.png"
-                rating="5.0"
-                review="6"
-                country="USA"
-                title="Life lessons with Katie Zaferes"
-                price="136"
-                vagas={true}
-            />
+            <div className="cards-list">
+                {dataEntry}
+            </div>
         </div>
     )
 }
