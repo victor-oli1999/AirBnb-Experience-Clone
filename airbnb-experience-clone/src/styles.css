@@ -68,7 +68,7 @@ p {
     padding: 0 20px;
 }
 .card {
-    padding: 60px 20px 40px 0;
+    padding: 25px 20px 40px 0;
     width: 210px;
 }
 .card p, .card li {
@@ -148,13 +148,56 @@ p {
     h1 {
         font-size: 48px;
     }
-    p {
+    .conteudo p {
         font-size: 22px;
         width: 65%;
+    }
+    .cards-list {
+        padding: 0 45px;
     }
 }
 @media (max-width: 768px) {
     .imagens-estaticas {
         height: 350px;
+    }
+}
+@media (max-width: 480px) {
+    .imagens {
+        margin: auto;
+        width: 100%;
+    }
+    .imagens-estaticas {
+        height: 285px;
+    }
+    .img-cl-1 {
+        margin-bottom: 25px;
+    }
+    .img-cl-2 {
+        margin-top: 25px;
+    }
+}
+@media (max-width: 414px) {
+    .imagens-estaticas {
+        height: 240px;
+    }
+    .conteudo p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 375px) {
+    .conteudo, .cards-list {
+        padding: 0 20px;
+    }
+    .imagens-estaticas {
+        height: 205px;
+    }
+    .imagens-estaticas img {
+        width: 72px;
+    }
+    .img-cl-1 {
+        margin-bottom: 15px;
+    }
+    .img-cl-2 {
+        margin-top: 0px;
     }
 }

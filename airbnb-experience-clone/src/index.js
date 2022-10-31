@@ -10,14 +10,9 @@ import data from "./data"
 function Index() {
     const dataEntry = data.map(props => {
         return <Card 
-            id={props.id}
-            img={props.img}
-            rating={props.stats.rating}
-            review={props.stats.review}
-            country={props.country}
-            title={props.title}
-            price={props.price}
-            vagas={props.vagas}
+            key={props.id}
+            item={props}
+            {...props}
         /> 
     })
     return (
